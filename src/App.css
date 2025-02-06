@@ -12,11 +12,14 @@ body{
     font-family: "Poppins", serif;
 }
 
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
-    max-width: 1280px;
-    margin: 0 auto;
     height: 72px;
     align-items: center;
 }
@@ -30,10 +33,71 @@ nav{
 
 .login-button{
     all: unset;
-    padding: 6px 16px;
+    padding: 6px 26px;
     background: var(--red);
     height: 32px;
     color: white;
     font-weight: 500;
+    border-radius: 8px;
 
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 72px);
+    gap: 80px;
+}
+.hero-content{
+    display: grid;
+    gap: 10px;
+}
+.hero h1{
+    font-weight: 800;
+    font-size: 108px;
+    line-height: 102px;
+}
+
+.hero p{
+    font-weight: 600;
+    font-size: 16px;
+    text-align: left;
+    line-height: 24px;
+    color: var(--gray);
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.shop-now {
+    all: unset;
+    padding: 4px 16px;
+    background: var(--red);
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+}
+.category {
+    all: unset;
+    padding: 4px 16px;
+    background: white;
+    color: var(--gray);
+    font-weight: 500;
+    border: 1px solid var(--gray);
+    border-radius: 8px;
+}
+
+.shop-at{
+    display: grid;
+    gap: 10px;
+    align-items: center;
+}
+.brand-logos{
+    display:flex;
+    flex-direction:row-reverse;
+    gap: 16px;
+    align-self: center;
+    justify-content: start;    
 }
